@@ -146,7 +146,7 @@ strong {
 }
 
 img {
-  position: relative;
+  /*position: relative;
   margin: 0 auto;
   max-width: 739px;
   padding: 5px;
@@ -156,7 +156,7 @@ img {
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  -ms-box-shadow: 0 0 5px #ebebeb;*/  
 }
 
 p img {
@@ -344,18 +344,16 @@ Full-Width Styles
   color:#EBEBEB;
 }
 
-#forkme_banner {
-  display: block;
+#forkme {
   position: relative;
   text-align: end;
-  background: url('../images/blacktocat.png') no-repeat 100% 100%;
-  border-bottom-left-radius: 1 px;
-  border-bottom-right-radius: 1 px;
-  text-decoration: none;
   font-size: 15px;
   font-weight: 100;
-  font-family: 'Ruluko','Roboto Condensed',Helvetica, Arial, sans-serif;
-  padding: 10px 35px 0px 0px;
+  font-family: 'Ruluko',Helvetica, Arial, sans-serif;
+}
+
+#forkme a{
+  text-decoration: none;
 }
 
 #downloads {
