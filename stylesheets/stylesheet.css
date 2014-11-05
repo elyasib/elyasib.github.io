@@ -52,40 +52,42 @@ body {
   /*color:#373737;*/
   background: #1C3C59;
   border-width: 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'PT Sans',Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0px 0;
   font-weight: 700;
-  font-family: 'Junge', Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 100;
-  font-family: 'Advent Pro','Courgette','Cinzel',Helvetica, Arial, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 h2 {
   padding-bottom: 10px;
   font-size: 30px;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 
 h3 {
   font-size: 24px;
+  font-weight: 100;
+  font-family: 'PT Sans', 'Advent Pro', Helvetica, Arial, sans-serif;
+  letter-spacing: 0px;
 }
 
 h4 {
   padding-bottom: 10px;
   font-size: 21px;
-  font-weight: 300;
-  font-family: 'Roboto Condensed',Helvetica, Arial, sans-serif;
 }
 
 h5 {
@@ -173,7 +175,7 @@ pre, code {
   color: #222;
   background-color: #fff;
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Monaco, monospace;
   font-size: 14px;
 
   border-radius: 2px;
@@ -208,12 +210,16 @@ blockquote {
 
 
 ul, ol, dl {
-  margin-bottom: 15px
+  margin-bottom: 10px
 }
 
 ul {
-  list-style: inside;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+li {
+  display: inline-block;
 }
 
 ol {
@@ -282,6 +288,16 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+.menubar {
+  text-align: end;
+  color: #EBEBEB;
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed',sans-serif;
+  letter-spacing: -1px;
+}
+
 #headerWrap {
   background: #234360;
   border-width: 0px;
@@ -295,6 +311,7 @@ Full-Width Styles
   background: #ffffff;
   border-top: 0px;
   border-bottom: 0px;
+  font-family:  'PT Sans', sans-serif;;
 }
 
 #footerWrap {
@@ -314,13 +331,13 @@ Full-Width Styles
 #myName {
   margin: 0;
   color:#EBEBEB;
-  font-size: 36px;
-  font-weight: 100;
+  font-size: 38px;
+  font-weight: 150;
   }
 
 #tagline {
   color:#EBEBEB;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   background: none;
 }
@@ -329,17 +346,12 @@ Full-Width Styles
   background: #1C3C59;
 }
 
-#menubar a:hover, a:focus {
+#menuWrap a:hover, a:focus {
   color: #CBC67E;
   text-decoration: none;
 }
 
-#menubar {
-  text-align: end;
-  color: #EBEBEB;
-}
-
-#menuElement{
+#menuElement {
   padding: 0px 20px 0px 0px;
   color:#EBEBEB;
 }
@@ -411,6 +423,10 @@ Small Device Styles
   .inner {
     min-width: 90%;
     max-width: 95%;
+  }
+
+  .menubar {
+    font-size: 25px;
   }
 
   #myName {
