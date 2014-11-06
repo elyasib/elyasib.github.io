@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Irving" />
 
-    <link href='http://fonts.googleapis.com/css?family=Junge' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="shortcut icon" href="./images/favicon_es.ico" >
 
     <title>Contact - Irving Elyasib Santiago</title>
@@ -38,23 +36,26 @@
       </header>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="mainContentWrap" class="outer">
-      <section id="mainContent" class="inner">
-
-        <h3>Contact</h3>
-        <p> If you need more informartion, please do not hesitate to contact me: </p>
-        <!-- Contact form from a web service, since github pages can only publish static pages-->
-        <a id="foxyform_embed_link_607636" href="http://www.foxyform.com/">foxyform</a>
-        <script type="text/javascript">
-        (function(d, t){
-           var g = d.createElement(t),
-               s = d.getElementsByTagName(t)[0];
-           g.src = "http://www.foxyform.com/js.php?id=607636&sec_hash=3a4b2ddf054&width=350px";
-           s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-        </script>
-      </section>
+    <!-- MAIN CONTENT --> 
+    <div id="mainContentWrap" class="outer"> 
+      <section id="mainContent" class="inner"> 
+      
+        <h3>Contact</h3> 
+        <p> If you need more informartion, please do not hesitate to contact me: </p> 
+        <!-- Contact form from a web service, since github pages can only publish static pages--> 
+        <script type="text/javascript"> 
+          (function(d){ 
+            var i = d.createElement('IFRAME'); 
+            i.src = "http://www.foxyform.com/form.php?id=607636&sec_hash=3a4b2ddf054"; 
+            i.width = "350px"; 
+            i.height = "446px"; 
+            i.frameBorder = 0; 
+            i.setAttribute('style', 'border: none;'); 
+            i.id = "contactIframe";
+            mainContent.appendChild(i);
+          }(document));
+        </script> 
+      </section> 
     </div>
 
     <!-- FOOTER  -->
