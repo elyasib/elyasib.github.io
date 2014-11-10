@@ -220,6 +220,11 @@ ul {
 
 li {
   display: inline-block;
+  padding: 0px 20px 0px 0px;
+}
+
+li a {
+  color:#EBEBEB;
 }
 
 ol {
@@ -275,7 +280,7 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
-.outer {
+.outerFull {
   position: relative;
   width: 80%;
   left: 10%;
@@ -414,6 +419,12 @@ Small Device Styles
 @media screen and (max-width: 480px) {
   body {
     font-size:14px;
+  }
+
+  .outerSmall {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
   }
 
   #downloads {

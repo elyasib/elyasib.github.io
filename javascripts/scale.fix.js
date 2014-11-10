@@ -1,17 +1,24 @@
-var metas = document.getElementsByTagName('meta');
-var i;
-if (navigator.userAgent.match(/iPhone/i)) {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-    }
+var isMobile = { 
+  Android: function() { 
+    return navigator.userAgent.match(/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i); 
+  }, 
+  BlackBerry: function() { 
+    return navigator.userAgent.match(/BlackBerry|BB10/i); 
+  }, 
+  IPhone: function() { 
+    return navigator.userAgent.match(/iPhone|iPod/i); 
+  }, 
+  Windows: function() { 
+    return navigator.userAgent.match(/IEMobile/i); 
+  }, 
+  OperaMini: function() { 
+    return navigator.userAgent.match(/Opera Mini/i); 
+  }, 
+  FFoxMobile: function() { 
+    return navigator.userAgent.match(/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i); 
+  }, 
+  any: function() { 
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IPhone() || isMobile.Windows() || isMobile.OperaMini() || isMobile.FFoxMobile()); 
   }
-  document.addEventListener("gesturestart", gestureStart, false);
-}
-function gestureStart() {
-  for (i=0; i<metas.length; i++) {
-    if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-    }
-  }
-}
+}; 
+
