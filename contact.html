@@ -45,7 +45,6 @@
       <!-- MAIN CONTENT --> 
       <div id="mainContentWrap"> 
         <section id="mainContent" class="inner"> 
-        
           <h3>Contact</h3> 
           <p> If you need more information, please do not hesitate to contact me: </p> 
           <!-- Contact form from a web service, since github pages can only publish static pages--> 
@@ -57,10 +56,12 @@
               i.height = "446px"; 
               i.frameBorder = 0; 
               i.setAttribute('style', 'border: none;'); 
+              i.scrolling = "no";
               i.id = "contactIframe";
               mainContent.appendChild(i);
             }(document));
           </script> 
+          <script>scaleIframe();window.onresize = scaleIframe;</script>  
         </section> 
       </div>
 
@@ -82,7 +83,7 @@
       
         ga('create', 'UA-56504515-1', 'auto');
         ga('send', 'pageview');
-    </script>
+    </script> 
   </div>
   </body>
 
