@@ -21,8 +21,7 @@
 
   <body>
     <div id="docWrap"> 
-    <script type="text/javascript">contentSize.initWrapper();</script> 
-
+    <script type="text/javascript">scalePage();</script>
       <!-- MENU BAR -->
       <div id="menuWrap">
         <nav class="menubar">
@@ -60,8 +59,9 @@
               i.id = "contactIframe";
               mainContent.appendChild(i);
             }(document));
+            scaleContactPage();
           </script> 
-          <script>scaleIframe();window.onresize = scaleIframe;</script>  
+            
         </section> 
       </div>
 
@@ -84,6 +84,7 @@
         ga('create', 'UA-56504515-1', 'auto');
         ga('send', 'pageview');
     </script> 
+    <script type="text/javascript">window.onresize = scaleContactPage;</script>
   </div>
   </body>
 

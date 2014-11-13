@@ -21,7 +21,7 @@
 
   <body> 
     <div id="docWrap"> 
-    <script type="text/javascript">contentSize.initWrapper();</script> 
+    <script type="text/javascript">scalePage();window.onresize = scalePage;</script>
     <!-- MENU BAR --> 
       <div id="menuWrap"> 
         <nav class="menubar"> 
@@ -45,19 +45,16 @@
       <!-- MAIN CONTENT --> 
       <div id="mainContentWrap">
         <section id="mainContent" class="inner"> 
-
           <h3>Index</h3>
           <p>Apologize for the inconveniences, this page is under development</p>
           <p><a href="./about.html">About</a></p> 
           <p><a href="./contact.html">Contact</a></p> 
-          <form><input type="text" id="wSize"></form> 
           <script type="text/javascript"></script> 
         </section> 
       </div> 
 
       <!-- FOOTER  --> 
       <div id="footerWrap"> 
-                          <!-- <script type="text/javascript">selectWrapper("#footerWrap");</script>--> 
         <footer> 
           <p  id="forkme"> 
             <a href="https://github.com/elyasib/elyasib.github.io/fork">Fork me! 
