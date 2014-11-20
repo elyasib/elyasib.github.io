@@ -273,7 +273,7 @@ th {
 td { 
   padding: 10px; 
   border: none; 
-  vertical-align:middle;
+  vertical-align:middle;  
  } 
 
 form { 
@@ -399,6 +399,7 @@ Full-Width Styles
 #mainContent { 
   padding-top: 2%;
   padding-bottom: 3%;
+  z-index:11;
 } 
 
 #myName { 
