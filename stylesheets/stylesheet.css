@@ -399,7 +399,7 @@ Full-Width Styles
 #mainContent { 
   padding-top: 2%;
   padding-bottom: 3%;
-  z-index:11;
+  z-index:9;
 } 
 
 #myName { 
