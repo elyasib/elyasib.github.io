@@ -51,6 +51,13 @@ function slctWrprClss() {
   }; 
 }; 
 
+function placeContent(header,content) {
+  s = document.getElementById(header).offsetHeight+"px";
+  document.getElementById(content).style.marginTop = s;
+}
+
+            
+
 
 function rltiveScaling(base,toScale){ 
   var b = document.getElementById(toScale); 

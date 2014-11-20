@@ -1,8 +1,13 @@
-Slate Theme for GitHub Pages 
+
+@import url('http://fonts.googleapis.com/css?family=Ruluko');
+@import url('http://fonts.googleapis.com/css?family=Roboto+Condensed:300');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans');
+@import url('http://fonts.googleapis.com/css?family=Advent+Pro');
+@import url(pygment_trac.css); 
+
+/*Slate Theme for GitHub Pages 
 by Jason Costello, @jsncostello 
 *******************************************************************************/ 
-
-@import url(pygment_trac.css); 
 
 /******************************************************************************* 
 MeyerWeb Reset 
@@ -48,13 +53,13 @@ Theme Styles
 *******************************************************************************/ 
 
 body { 
-  box-sizing: border-box; 
-  /*color:#373737;*/ 
-  background: #1C3C59; 
+  box-sizing: border-box;
+  background: #5E171F; 
   border-width: 0px; 
   font-size: 18px; 
   font-family: 'PT Sans',Calibri, Helvetica, Arial, sans-serif; 
   line-height: 1.5; 
+  margin:0;
   -webkit-font-smoothing: antialiased; 
 } 
 
@@ -106,7 +111,7 @@ p {
 
 a { 
   text-decoration: none; 
-  color: #007edf; 
+  color: #D23C40; 
   text-shadow: none; 
 
   transition: color 0.5s ease; 
@@ -147,8 +152,8 @@ strong {
   font-weight: bold; 
 } 
 
-img { 
-  /*position: relative; 
+/*img { 
+  position: relative; 
   margin: 0 auto; 
   max-width: 739px; 
   padding: 5px; 
@@ -158,7 +163,7 @@ img {
   -webkit-box-shadow: 0 0 5px #ebebeb; 
   -moz-box-shadow: 0 0 5px #ebebeb; 
   -o-box-shadow: 0 0 5px #ebebeb; 
-  -ms-box-shadow: 0 0 5px #ebebeb;*/   
+  -ms-box-shadow: 0 0 5px #ebebeb;
 } 
 
 p img { 
@@ -168,7 +173,7 @@ p img {
   vertical-align: middle; 
   text-align: center; 
   border: none; 
-} 
+} */
 
 pre, code { 
   width: 100%; 
@@ -254,9 +259,8 @@ hr {
 } 
 
 table { 
-  border: 1px solid #373737; 
-  margin-bottom: 20px; 
-  text-align: left; 
+  border-collapse: collapse; 
+  border-spacing: 0; 
  } 
 
 th { 
@@ -268,12 +272,13 @@ th {
 
 td { 
   padding: 10px; 
-  border: 1px solid #373737; 
+  border: none; 
+  vertical-align:middle;
  } 
 
 form { 
   background: #f2f2f2; 
-  padding: 20px; 
+  padding: 10px; 
 } 
 
 /******************************************************************************* 
@@ -282,8 +287,8 @@ Full-Width Styles
 
 .outerFull { 
   position: relative; 
-  width: 80%; 
-  left: 10%; 
+  width: 100%;
+  padding: 0px;
 } 
 
 .inner { 
@@ -294,43 +299,106 @@ Full-Width Styles
 } 
 
 .menubar { 
-  text-align: end; 
+  text-align: right; 
+  line-height: 1; 
   color: #EBEBEB; 
-  padding-bottom: 10px; 
+  padding-bottom: .5em;
+  padding-top:  10px;
+  padding-right:  10px; 
   font-size: 21px; 
   font-weight: 100; 
   font-family: 'Roboto Condensed',sans-serif; 
-  letter-spacing: -1px; 
+  letter-spacing: -1px;
+  width: 100%;
+}
+
+.headerClss {
+  position:fixed;
+  margin-top:0;
+  top:0%;
+  z-index:10;
+  width:100%;
+  background:#D23C40;
+  background: -webkit-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: -o-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: -moz-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: linear-gradient(to bottom,#882022 ,#D23C40);
+}
+
+.menubar a:hover, a:focus{ 
+  text-decoration:none;
+  color:#CBC67E;
+}
+
+.indexPage { 
+  width:100%;
+  left:0;
+  height:100vh;
+  background:#D23C40;
+  background: -webkit-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: -o-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: -moz-linear-gradient(top,#882022 0%,#D23C40 42%,#D34346 52%,#882022 100%); 
+  background: linear-gradient(to bottom,#882022,#D23C40 42%,#D34346 52%,#882022 100%);
+  margin: 0;
 } 
 
-#headerWrap { 
-  background: #234360; 
+.background_Image { 
+  background: url("../images/dotpatten2.svg");
+  /*background-repeat: repeat;*/
+  /*background-repeat: repeat-y;*/
+  background-repeat: repeat;
+  background-position: 50% 0%;
+  background-size: 20em ;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1:;
+} 
+
+#titleWrap { 
   border-width: 0px; 
 } 
 
-#headerWrap .inner { 
+#titleWrap .inner { 
   padding: 10px 10px 10px 10px; 
 } 
 
 #mainContentWrap { 
+  position: relative;
   background: #ffffff; 
   border-top: 0px; 
   border-bottom: 0px; 
   font-family:  'PT Sans', sans-serif;; 
 } 
 
+#mainContentWrap a:hover, a:focus { 
+  text-decoration:underline;
+}
+
+#mainContentWrap img {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 0%;
+  padding-bottom: 0%; 
+  width: 100%;
+}
+
 #footerWrap { 
-  background: #234360; 
-  padding: 1% 0% 1% 0%; 
-  /*background: -moz-linear-gradient(top, #ffffff, #234360); 
-  background: -webkit-linear-gradient(top, #ffffff, #234360); 
-  background: -ms-linear-gradient(top, #ffffff, #234360); 
-  background: -o-linear-gradient(top, #ffffff, #234360); 
-  background: linear-gradient(top, #ffffff, #234360);*/ 
+  background: #D23C40; 
+  padding: 1% 0 1% 0;
+  text-align: right; 
+  font-size: 15px; 
+  font-weight: 100; 
+  font-family: 'Ruluko',Helvetica, Arial, sans-serif;
+} 
+
+#footerWrap a{ 
+  text-decoration: none; 
 } 
 
 #mainContent { 
-  padding-top: 40px; 
+  padding-top: 2%;
+  padding-bottom: 3%;
 } 
 
 #myName { 
@@ -340,20 +408,32 @@ Full-Width Styles
   font-weight: 150; 
   } 
 
+#myNameIndx { 
+  font-size: 80px; 
+  text-align:center;
+  color:#CBC67E;
+  font-weight: 150; 
+} 
+
+#taglineIndx { 
+  font-size: 45px; 
+  text-align:center;
+  font-weight: 300;
+  color:#EBEBEB; 
+} 
+
+#fieldsIndx { 
+  font-size: 20px; 
+  text-align:center;
+  font-weight: 300;
+  color:#EBEBEB; 
+} 
+
 #tagline { 
   color:#EBEBEB; 
   font-size: 25px; 
   font-weight: 300; 
   background: none; 
-} 
-
-#menuWrap{ 
-  background: #1C3C59; 
-} 
-
-#menuWrap a:hover, a:focus { 
-  color: #CBC67E; 
-  text-decoration: none; 
 } 
 
 #menuElement { 
@@ -363,7 +443,7 @@ Full-Width Styles
 
 #forkme { 
   position: relative; 
-  text-align: end; 
+  text-align: right; 
   font-size: 15px; 
   font-weight: 100; 
   font-family: 'Ruluko',Helvetica, Arial, sans-serif; 
@@ -418,13 +498,14 @@ Small Device Styles
 
 @media screen and (max-width: 480px) { 
   body { 
-    font-size:14px; 
+    font-size:16px; 
   } 
 
   .outerSmall { 
   position: relative; 
   width: 100%; 
   left: 0%; 
+  padding: 0px;
   } 
 
   #downloads { 
@@ -443,6 +524,18 @@ Small Device Styles
   #myName { 
   font-size: 32px; 
   } 
+
+  #myNameIndx { 
+  font-size: 50px; 
+  } 
+
+  #taglineIndx { 
+  font-size: 28px; 
+  }
+
+  #fieldsIndx { 
+  font-size: 12px;
+  }
 
   h1 { 
     font-size: 28px; 
